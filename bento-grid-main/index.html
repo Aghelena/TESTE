@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bento-grid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      font-weight: 200;
+      font-size: 0.9rem;
+    }
+
+    body {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #F7F6F9;
+      overflow-x: hidden;
+      padding: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .social_media {
+      grid-column: span 2;
+      background-color: #9B7BF7;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .social_media h1 {
+      font-size: 36px;
+      margin: 0 0 10px;
+      line-height: 1.4;
+    }
+
+    .social_media .num {
+      color: #F5B700;
+    }
+
+    .post {
+      background-color: #FFEAC7;
+      color: #000;
+      padding: 25px;
+    }
+
+    .schedule {
+      background-color: #E6D8F8;
+      color: #000;
+      padding: 25px;
+      font-size: 0.95rem;
+    }
+
+    .grow {
+      background-color: #C9A2F8;
+      color: #000;
+      padding: 25px;
+    }
+
+    .content {
+      background-color: #FFDF85;
+      color: #000;
+      padding: 25px;
+    }
+
+    .writing {
+      background-color: #F9C983;
+      color: #000;
+      padding: 25px;
+    }
+
+    .management {
+      background-color: #FFF;
+      color: #000;
+      padding: 25px;
+    }
+
+    .box img {
+      max-width: 100%;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+
+    footer {
+      grid-column: span 4;
+      text-align: center;
+      font-size: 11px;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #6A5ACD;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (min-width: 49rem) {
+      .container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        width: 85vw;
+      }
+
+      .social_media {
+        grid-column: span 2;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="post box">
+      <p style="font-size: 1.1rem;">Create and schedule content quicker.</p>
+      <img src="assets/images/illustration-create-post.webp" alt="Create Content">
+    </div>
+
+    <div class="social_media box">
+      <h1>Social Media <span class="num">10x</span> Faster with AI</h1>
+      <img src="assets/images/illustration-five-stars.webp" alt="Social Media AI">
+      <p style="font-size: 1rem;">Over 4,000 5-star reviews</p>
+    </div>
+
+    <div class="schedule box">
+      <p style="font-size: 1rem;">Schedule to social media.</p>
+      <img src="assets/images/illustration-schedule-posts.webp" alt="Schedule Posts">
+      <p style="font-size: 0.85rem;">Optimize post timings to publish content at the perfect time for your audience.</p>
+    </div>
+
+    <div class="writing box">
+      <p style="font-size: 1rem;">Write your content using AI.</p>
+      <img src="assets/images/illustration-ai-content.webp" alt="AI Writing">
+    </div>
+
+    <div class="management box">
+      <p style="font-size: 1rem;">Manage multiple accounts and platforms.</p>
+      <img src="assets/images/illustration-multiple-platforms.webp" alt="Manage Accounts">
+    </div>
+
+    <div class="content box">
+      <p style="font-size: 1rem;">>56% faster audience growth</p>
+      <img src="assets/images/illustration-audience-growth.webp" alt="Audience Growth">
+    </div>
+
+    <div class="post box">
+      <p style="font-size: 1rem;">Maintain a consistent posting schedule.</p>
+      <img src="assets/images/illustration-consistent-schedule.webp" alt="Posting Schedule">
+    </div>
+
+    <div class="grow box">
+      <p style="font-size: 1rem;">Grow followers with non-stop content.</p>
+      <img src="assets/images/illustration-grow-followers.webp" alt="Grow Followers">
+    </div>
+  </div>
+
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Agnyh Helena</a>.
+  </footer>
+</body>
+</html>
